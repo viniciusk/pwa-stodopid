@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Yet another stupidly simple To Do app.">
+    <title>Stodopidly - Yet another To Do app</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#E9DAFF"/>
+    <link rel="stylesheet" type="text/css" href="./css/stodopidly.css" media="all">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+<h1 class="vertical-container">Stodopidly simple :)</h1>
+
+<script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDBM87wJBNuPGOIgJD5P6_yUYImDH_vego",
+        authDomain: "stodopidly.firebaseapp.com",
+        databaseURL: "https://stodopidly.firebaseio.com",
+        projectId: "stodopidly",
+        storageBucket: "stodopidly.appspot.com",
+        messagingSenderId: "135103208207"
+    };
+    firebase.initializeApp(config);
+</script>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+            .then(function () {
+                console.log('Service Worker Registered');
+            });
+    }
+</script>
+<noscript>
+    Please enable Javascript to continue using this application.
+</noscript>
+</body>
+</html>

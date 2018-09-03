@@ -1,0 +1,19 @@
+body {
+    background-color: #E9DAFF;
+    color: #410b0d;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.vertical-container {
+    height: 300px;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+
+h1.vertical-container {
+    font-size: 275%;
+}
