@@ -2,7 +2,9 @@ var cacheName = 'stodopidly';
 var filesToCache = [
     '/',
     '/index.html',
-    '/css/stodopidly.css'
+    '/css/stodopidly.css',
+    '/js/app.js',
+    '/js/storage.js'
 ];
 
 self.addEventListener('install', function(e) {
