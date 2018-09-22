@@ -19,9 +19,6 @@
     <div class="todo-list">
         <h1 class="h3 mb-3 font-weight-normal">Stodopidly</h1>
 
-        <p v-show="isListEmpty" class="mb-4 text-muted">Nice one... nothing to do :)</p>
-        <p v-show="!isListEmpty" class="mb-4 text-muted">Hurry up, you lazy ass... jk =P</p>
-
         <!-- Next item list !-->
         <div>
             <label for="nextToDoItem" class="sr-only">My next thing to do is...</label>
@@ -30,6 +27,9 @@
                    placeholder="My next thing to do is..." required autofocus>
             <button v-on:click="addNextToDoItem" class="btn btn-lg btn-primary btn-block" type="button">Add</button>
         </div>
+
+        <p v-show="isListEmpty" class="mb-4 text-muted">Nice one... nothing to do :)</p>
+        <p v-show="!isListEmpty" class="mb-4 text-muted">Hurry up, you lazy ass... jk =P</p>
 
         <!-- To Do list not empty !-->
         <div v-show="!isListEmpty">

@@ -36,6 +36,7 @@ body {
     /*border-bottom-left-radius: 0;*/
 }
 .todo-list button {
+    margin-bottom: 10px;
     background-color: #705282;
 }
 .todo-list button:hover {
